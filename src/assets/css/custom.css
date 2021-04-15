@@ -1,0 +1,14 @@
+.right {
+    float: right;
+}
+
+.dragHover {
+    background-color: #63839757;
+    border-radius: 15px;
+    padding: 5px;
+}
+.dragHover:hover {
+    background-color: #6383979d;
+    border-radius: 15px;
+    padding: 5px;
+}

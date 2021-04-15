@@ -1,0 +1,88 @@
+{
+    "name": "alto-tech-test",
+    "version": "0.1.0",
+    "author": "Nize",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.10",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "apexcharts": "^3.26.0",
+        "bootstrap": "^4.6.0",
+        "chart.js": "^2.9.4",
+        "connected-react-router": "^6.9.1",
+        "firebase": "^8.3.3",
+        "history": "^5.0.0",
+        "moment": "^2.29.1",
+        "node-sass": "^5.0.0",
+        "perfect-scrollbar": "^1.5.0",
+        "react": "^17.0.2",
+        "react-apexcharts": "^1.3.7",
+        "react-chartjs-2": "^2.11.1",
+        "react-countdown": "^2.3.1",
+        "react-dom": "^17.0.2",
+        "react-google-maps": "^9.4.5",
+        "react-notification-alert": "^0.0.13",
+        "react-p5": "^1.3.19",
+        "react-redux": "^7.2.3",
+        "react-redux-firebase": "^3.10.0",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-smooth-dnd": "^0.11.1",
+        "reactstrap": "^8.9.0",
+        "redux": "^4.0.5",
+        "redux-firestore": "^0.15.0",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "web-vitals": "^1.0.1"
+    },
+    "setupFilesAfterEnv": [
+        "./src/setupTests.js"
+    ],
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "eject": "react-scripts eject",
+        "test": "react-scripts test",
+        "testWatch": "react-scripts test --watch",
+        "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+        "compile-sass": "node-sass src/assets/scss/paper-dashboard.scss src/assets/css/paper-dashboard.css",
+        "minify-sass": "node-sass src/assets/scss/paper-dashboard.scss src/assets/css/paper-dashboard.min.css --output-style compressed",
+        "map-sass": "node-sass src/assets/scss/paper-dashboard.scss src/assets/css/paper-dashboard.css --source-map true",
+        "prettier": "prettier --write \"{**/*.js,src/**/*.js,test/**/*.js}\"",
+        "prettier:watch": "onchange \"{**/*.js,src/**/*.js,test/**/*.js}\" -- prettier --write {{changed}}"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.6",
+        "eslint-config-prettier": "^6.4.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "onchange": "^6.1.0",
+        "prettier": "^2.2.1",
+        "riteway": "^6.2.1"
+    }
+}
